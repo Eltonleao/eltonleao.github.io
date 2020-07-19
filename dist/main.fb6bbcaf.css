@@ -17,10 +17,6 @@ header a, i {
   color: black !important;
 }
 
-body {
-  min-height: 100vh;
-}
-
 #home {
   height: 100%;
 }

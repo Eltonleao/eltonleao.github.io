@@ -1,79 +1,80 @@
 .logo {
+  // border: solid;
   position: relative;
   display: flex;
   justify-content: center;
-  // border: solid;
   width: 100%;
   height: 550px;
-}
-.stroke {
-  border: solid black 3px;
-  border-radius: 50%;
-  position: absolute;
-  display: flex;
-  align-self: center;
-}
-.sphere {
-  background-color: black;
-  border-radius: 50%;
-  position: absolute;
-}
-.sphere-center {
-  width: 100px;
-  height: 100px;
-  align-self: center;
-  background-size: cover;
-  animation: spin-right 200s linear infinite;
-  // background-image: url("../img/milky-way.jpg");
-}
-/*  */
+  .stroke {
+    border: solid black 3px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-self: center;
+  }
+  .sphere {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .sphere-center {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    background-size: cover;
+    animation: spin-right 200s linear infinite;
+    // background-image: url("../img/milky-way.jpg");
+  }
+  /*  */
 
-.stroke-1 {
-  width: 200px;
-  height: 200px;
-  animation: spin-right 200s linear infinite;
-}
-.sphere-1 {
-  width: 60px;
-  height: 60px;
-  right: -30px;
-  align-self: center;
-}
-.stroke-2 {
-  height: 350px;
-  width: 350px;
-  justify-content: center;
-  animation: spin-left 250s linear infinite;
-}
-.sphere-2 {
-  width: 60px;
-  height: 60px;
-  top: -30px;
-  justify-self: center;
+  .stroke-1 {
+    width: 200px;
+    height: 200px;
+    animation: spin-right 200s linear infinite;
+  }
+  .sphere-1 {
+    width: 60px;
+    height: 60px;
+    right: -30px;
+    align-self: center;
+  }
+  .stroke-2 {
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+    animation: spin-left 250s linear infinite;
+  }
+  .sphere-2 {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    justify-self: center;
+  }
+
+  .sphere-3 {
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    align-self: center;
+  }
+  .stroke-3 {
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    animation: spin-right 180s linear infinite;
+  }
+  .sphere-4 {
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+  }
+  .sphere-5 {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+  }
 }
 
-.sphere-3 {
-  width: 30px;
-  height: 30px;
-  left: -15px;
-  align-self: center;
-}
-.stroke-3 {
-  height: 500px;
-  width: 500px;
-  justify-content: center;
-  animation: spin-right 180s linear infinite;
-}
-.sphere-4 {
-  width: 30px;
-  height: 30px;
-  bottom: -15px;
-}
-.sphere-5 {
-  width: 30px;
-  height: 30px;
-  top: -15px;
-}
 @-webkit-keyframes spin-right {
   from {
     -webkit-transform: rotate(0deg);
