@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                         "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
                         "node_modules/material-design-lite/material.min.js",
                         "node_modules/animejs/lib/anime.min.js",
-                        'node_modules/aos/dist/aos.js'
+                        // 'node_modules/aos/dist/aos.js'
                     ]
                 }
             }
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
                     'dist/css/vendor.min.css': [
                         'node_modules/material-design-lite/material.min.css',
                         'node_modules/bootstrap/dist/css/bootstrap.min.css',
-                        'node_modules/aos/dist/aos.css'
+                        // 'node_modules/aos/dist/aos.css'
 
                     ]
                 }
