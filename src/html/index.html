@@ -15,7 +15,7 @@
 
 <body>
 
-  <div id="home" class="mdl-layout mdl-js-layout">
+  <section id="home" class="mdl-layout mdl-js-layout">
     <header class="mdl-layout__header mdl-layout__header--scroll">
       <div class="mdl-layout__header-row">
         <!-- Title -->
@@ -31,6 +31,7 @@
         </nav>
       </div>
     </header>
+
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Title</span>
       <nav class="mdl-navigation">
@@ -40,9 +41,10 @@
         <a class="mdl-navigation__link" href="">Link</a>
       </nav>
     </div>
-    <main class="mdl-layout__content">
-      <h1>Hello </h1>
-      <div class="page-content">
+
+    <main class="mdl-layout__content page-content">
+        <h1>Hello </h1>
+
         <div class="logo">
           <div class='stroke stroke-3'>
             <div class="sphere sphere-4"></div>
@@ -57,47 +59,15 @@
           </div>
           <div class="sphere sphere-center"></div>
         </div>
+        <h1></h1>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-          Launch
-        </button>
+
+
         
-        <!-- Modal -->
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                Body
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <span class="material-icons text-center">
-            keyboard_arrow_down
-            </span>
-        </div>
-
-
-
-        <!-- END CONTENT -->
     </main>
-  </div>
+  </section>
   <!-- js vendors -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-  <!-- <script src="../../node_modules/jquery/dist/jquery.slim.js"></script> -->
   <script src="../../node_modules/@popperjs/core/dist/esm/popper.js"></script>
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../../node_modules/animejs/lib/anime.min.js"></script>
