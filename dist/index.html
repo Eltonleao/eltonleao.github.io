@@ -7,11 +7,11 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="styleesheet" href="/bootstrap.min.15b1a1e6.css">
-  <link rel="styleesheet" href="/bootstrap-grid.min.acdbbce4.css">
-  <link rel="stylesheet" href="/material.min.cdb895e5.css">
-  <link rel="stylesheet" href="/style.1dc133ea.css">
-<script src="/bootstrap.min.15b1a1e6.js"></script><script src="/bootstrap-grid.min.acdbbce4.js"></script><script src="/material.min.cdb895e5.js"></script><script src="/style.1dc133ea.js"></script></head>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/vendor.min.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
 <body>
 
@@ -19,7 +19,7 @@
     <header class="mdl-layout__header mdl-layout__header--scroll">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">Title</span>
+        <span class="mdl-layout-title"> <a href="./">Multiverse</a></span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
@@ -43,36 +43,76 @@
     </div>
 
     <main class="mdl-layout__content page-content">
-        <h1>Hello </h1>
-
+      <div>
         <div class="logo">
-          <div class="stroke stroke-3">
+          <div class='stroke stroke-3'>
             <div class="sphere sphere-4"></div>
             <div class="sphere sphere-5"></div>
           </div>
-          <div class="stroke stroke-2">
+          <div class='stroke stroke-2'>
             <div class="sphere sphere-2"></div>
             <div class="sphere sphere-3"></div>
           </div>
-          <div class="stroke stroke-1">
+          <div class='stroke stroke-1'>
             <div class="sphere sphere-1"></div>
           </div>
           <div class="sphere sphere-center"></div>
         </div>
-        <h1></h1>
+
+        <div class="row row-arrow">
+          <span class="material-icons arrow fade-up">
+            <a href="#portfolio">
+              keyboard_arrow_down
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      <div id="portfolio" data-aos="fade-up">
+        <h1>teste</h1>
+      </div>
+      
 
 
-
-        
+      <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+        <span class="material-icons">
+          info
+        </span>
+        <div class="mdl-snackbar__text">
+        </div>
+        <button class="mdl-snackbar__action" type="button"></button>
+      </div>
     </main>
   </section>
   <!-- js vendors -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-  <script src="/popper.2f403f45.js"></script>
-  <script src="/bootstrap.bundle.min.16ff6200.js"></script>
-  <script src="/anime.min.38f766bc.js"></script>
-  <script defer="" src="/material.min.2b4b5e3a.js"></script>
-  <script defer="" src="/main.8f75cf09.js"></script>
+  <script src="./js/vendor.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./js/site.min.js"></script>
+
 
 </body>
 

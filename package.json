@@ -13,12 +13,17 @@
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^2.2.0",
+    "grunt": "^1.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "parcel": "^1.12.4",
     "sass": "^1.26.5"
   },
   "dependencies": {
     "@popperjs/core": "^2.4.4",
     "animejs": "^3.2.0",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.5.0",
     "bootstrap4": "0.0.1-security",
     "jquery": "^3.5.1",
