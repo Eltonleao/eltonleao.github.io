@@ -8,13 +8,13 @@ module.exports = function (grunt) {
             },
             site: {
                 files: {
-                    'dist/js/site.min.js': ['src/js/**/*.js']
+                    '../webroot/js/site.min.js': ['src/js/**/*.js']
                 }
             },
             vendor: {
                 files: {
 
-                    'dist/js/vendor.min.js': [
+                    '../webroot/js/vendor.min.js': [
                         "node_modules/jquery/dist/jquery.slim.min.js",
                         "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
                         "node_modules/material-design-lite/material.min.js",
@@ -27,12 +27,12 @@ module.exports = function (grunt) {
         sass: {
             site: {
                 files: {
-                    'dist/css/style.min.css': 'src/sass/style.scss',
+                    '../webroot/css/style.min.css': 'src/sass/style.scss',
                 }
             },
             vendor: {
                 files: {
-                    'dist/css/vendor.min.css': [
+                    '../webroot/css/vendor.min.css': [
                         'node_modules/material-design-lite/material.min.css',
                         'node_modules/bootstrap/dist/css/bootstrap.min.css',
                         // 'node_modules/aos/dist/aos.css'

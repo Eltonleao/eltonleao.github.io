@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*
-    1- Eventos iniciais - primeito primeiro contato com a aplicação
+    1- Eventos iniciais - primeiro contato com a aplicação
     */
 
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
                     actionText: 'Undo'
                 }
             );
-        }, 1000);
+        }, 3000);
       sessionStorage.setItem('teste',1);
     
     }
