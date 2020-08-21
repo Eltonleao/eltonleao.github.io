@@ -8,13 +8,13 @@ module.exports = function (grunt) {
             },
             site: {
                 files: {
-                    '../webroot/js/site.min.js': ['src/js/**/*.js']
+                    '../public/js/site.min.js': ['assets/js/**/*.js']
                 }
             },
             vendor: {
                 files: {
 
-                    '../webroot/js/vendor.min.js': [
+                    '../public/js/vendor.min.js': [
                         "node_modules/jquery/dist/jquery.slim.min.js",
                         "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
                         "node_modules/material-design-lite/material.min.js",
@@ -27,12 +27,12 @@ module.exports = function (grunt) {
         sass: {
             site: {
                 files: {
-                    '../webroot/css/style.min.css': 'src/sass/style.scss',
+                    '../public/css/style.min.css': 'assets/sass/style.scss',
                 }
             },
             vendor: {
                 files: {
-                    '../webroot/css/vendor.min.css': [
+                    '../public/css/vendor.min.css': [
                         'node_modules/material-design-lite/material.min.css',
                         'node_modules/bootstrap/dist/css/bootstrap.min.css',
                         // 'node_modules/aos/dist/aos.css'
@@ -44,11 +44,11 @@ module.exports = function (grunt) {
 
         watch: {
             js:{
-                files: ['src/js/**/*.js'],
+                files: ['assets/js/**/*.js'],
                 tasks: ['uglify:site']
             },
             sass:{
-                files: ['src/sass/**/*'],
+                files: ['assets/sass/**/*'],
                 tasks: ['sass:site']
             }
           },
