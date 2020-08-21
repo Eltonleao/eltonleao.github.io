@@ -20,7 +20,7 @@ a {
   text-decoration: none; }
 
 .logo {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
