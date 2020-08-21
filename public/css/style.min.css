@@ -95,17 +95,16 @@ a {
   to {
     -webkit-transform: rotate(-359deg);
     background-position: right; } }
-#home .mdl-js-snackbar {
-  align-items: center;
-  justify-content: flex-start; }
-  @media screen and (min-width: 480px) {
-    #home .mdl-js-snackbar {
-      left: 150px; } }
-  #home .mdl-js-snackbar .mdl-snackbar__text {
-    padding: 10px 5px; }
-  #home .mdl-js-snackbar .material-icons {
-    padding-left: 10px;
-    color: #f4f4f4; }
+@media screen and (min-width: 480px) {
+  #home .mdl-js-snackbar {
+    left: 150px;
+    align-items: center;
+    justify-content: flex-start; } }
+#home .mdl-js-snackbar .mdl-snackbar__text {
+  padding: 10px 5px; }
+#home .mdl-js-snackbar .material-icons {
+  padding-left: 10px;
+  color: #f4f4f4; }
 #home .row-arrow {
   text-align: center; }
   #home .row-arrow a {

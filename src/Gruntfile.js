@@ -55,6 +55,7 @@ module.exports = function (grunt) {
 
 
     });
+    grunt.task.registerTask('default', ['uglify:site', 'sass:site']);
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
