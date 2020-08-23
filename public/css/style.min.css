@@ -121,4 +121,54 @@ a {
 #projetos .demo-card-wide > .mdl-card__menu {
   color: #fff; }
 
+#about .header {
+  min-height: 100px; }
+#about a {
+  color: black; }
+#about .row {
+  display: flex;
+  justify-content: center; }
+#about h2 {
+  text-align: center;
+  width: 100%; }
+#about .side-bar {
+  background-color: #fff;
+  text-align: center;
+  min-height: 100%;
+  border-radius: 5px;
+  padding-top: 10px; }
+  #about .side-bar ul {
+    list-style: none;
+    padding: 10px; }
+    #about .side-bar ul li {
+      position: relative;
+      margin: 0px 0px 10px 0px; }
+      #about .side-bar ul li .material-icons {
+        position: relative;
+        top: 3px; }
+  #about .side-bar hr {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px; }
+  #about .side-bar .github-icon {
+    height: 24px;
+    width: 24px; }
+#about .timeline {
+  padding: 0px 0px 0px 10px; }
+  #about .timeline .mdl-card__supporting-text {
+    width: 100%; }
+  #about .timeline .card {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 150px;
+    border-radius: 5px; }
+  #about .timeline .card:last-of-type {
+    margin-bottom: 0px; }
+#about .extras {
+  padding: 16px;
+  width: 94%;
+  margin: auto;
+  margin-top: 10px;
+  min-height: 100px; }
+
 /*# sourceMappingURL=style.min.css.map */
