@@ -15,8 +15,7 @@ module.exports = function (grunt) {
                 files: {
 
                     '../public/js/vendor.min.js': [
-                        "node_modules/jquery/dist/jquery.slim.min.js",
-                        "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+                        "node_modules/jquery/dist/jquery.js",
                         "node_modules/material-design-lite/material.min.js",
                         "node_modules/animejs/lib/anime.min.js",
                         // 'node_modules/aos/dist/aos.js'
@@ -34,9 +33,6 @@ module.exports = function (grunt) {
                 files: {
                     '../public/css/vendor.min.css': [
                         'node_modules/material-design-lite/material.min.css',
-                        'node_modules/bootstrap/dist/css/bootstrap.min.css',
-                        // 'node_modules/aos/dist/aos.css'
-
                     ]
                 }
             }
