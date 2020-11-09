@@ -4,7 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>Document</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
 
     <script>
         window.fbAsyncInit = function () {
@@ -17,6 +29,10 @@
 
             FB.AppEvents.logPageView();
 
+            FB.getLoginStatus(function (response) {
+                statusChangeCallback(response);
+            });
+
         };
 
         (function (d, s, id) {
@@ -26,16 +42,94 @@
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        console.log("c% Facbook running...", "background: blue; color: #f4f4f4; font-size: 30pt")
+        console.log("%c Facebook api is running...", "background: blue; color: #f4f4f4; font-size: 15pt")
 
-        FB.getLoginStatus(function (response) {
-            statusChangeCallback(response);
-            console.log(response);
-        });
+        function statusChangeCallback(response) {
+            if (response.status === 'connected') {
+                // Logged into your app and Facebook.
+                console.log('Welcome!  Fetching your information.... ');
+                FB.api('/me', function (response) {
+                    console.log(response);
+                    testApi();
+                    console.log('Successful login for: ' + response.name);
+                    document.getElementById('status').innerHTML =
+                        'Thanks for logging in, ' + response.name + '!';
+                });
+            } else {
+                // The person is not logged into your app or we are unable to tell.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                    'into this app.';
+            }
+        }
+
+
+        function buildProfile(dados) {
+            console.log(dados);
+            var html = "";
+            html += `<h1>${dados.name}</h1>`;
+            html += `<h2>${dados.id}</h2>`;
+            html += `<h3>${dados.email}</h3>`;
+            html += `<h3>${dados.location.name}</h3>`;
+
+            document.querySelector("#profile").innerHTML = html;
+        }
+
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                console.log(response);
+                statusChangeCallback(response);
+            });
+        }
+
+        function testApi() {
+            FB.api("me?fields=id,name,email, location", function (res) {
+                if (res && !res.error) {
+                    buildProfile(res);
+                }
+            });
+
+            FB.api("me/feed", function (res) {
+                for (var i = 0; i < 25; i++) {
+                    if (res.data[i].message) {
+                        console.log(res.data[i]);
+                    }
+                }
+            });
+
+            FB.ui(
+                {
+                    method: 'share',
+                    href: 'https://developers.facebook.com/docs',
+                    // target="_self"
+                },
+                // callback
+                function (response) {
+                    if (response && !response.error_message) {
+                        alert('Posting completed.');
+                    } else {
+                        alert('Error while posting.');
+                    }
+                }
+            );
+
+        }
+
+        function logout() {
+            FB.logout(function (res) {
+                console.log(res)
+            });
+        }
+
     </script>
-</head>
 
-<body>
+    <h1 id="status"></h1>
+
+    <fb:login-button scope="public_profile,email, user_birthday" onlogin="checkLoginState();">
+    </fb:login-button>
+
+    <button onclick="logout()">Logout</button>
+
+    <div id="profile"></div>
 
 </body>
 
