@@ -12,8 +12,8 @@ $(document).ready(function(){
             var notification = document.querySelector('.mdl-js-snackbar');
             notification.MaterialSnackbar.showSnackbar(
                 {
-                    message: 'Explore this Multiverse...',
-                    timeout: 3000,
+                    message: 'this site is under construction.. but a lot is to come! ;)',
+                    timeout: 5000,
                     actionText: 'Undo'
                 }
             );

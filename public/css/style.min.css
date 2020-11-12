@@ -19,6 +19,10 @@ header a, i {
 a {
   text-decoration: none; }
 
+.hero {
+  position: relative;
+  height: 100%; }
+
 .logo {
   position: absolute;
   display: flex;
