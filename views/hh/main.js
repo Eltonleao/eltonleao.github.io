@@ -10,7 +10,7 @@ function getText() {
     var url = $("#search").val();
 
     $.ajax({
-        url: "http://api-elton.herokuapp.com/api/getTextFromSite/"+url,
+        url: "https://api-elton.herokuapp.com/api/getTextFromSite/"+url,
         type: 'GET',
         success: function(res) {
             // var text = res.responseText;
