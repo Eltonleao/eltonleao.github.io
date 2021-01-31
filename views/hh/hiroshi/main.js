@@ -8,13 +8,20 @@ function getText() {
     $(".spinner-border").show();
 
     var url = $("#search").val();
+    var cors = "https://cors-anywhere.herokuapp.com/"+url;
+    // console.log(cors);
+    // return false;
 
     $.ajax({
         url: "https://api-elton.herokuapp.com/api/getTextFromSite/"+url,
+
+        // url : url,
         type: 'GET',
         success: function(res) {
+
             // var text = res.responseText;
-            // console.log(res);
+            console.log(res);
+            $('#content').html(res);
             $('.temp').html(res);
             var p = $('.temp').find('p');
             var html = "";
@@ -29,6 +36,10 @@ function getText() {
             window.location.hash = "content";
             $(".spinner-border").hide();
             // then you can manipulate your text as you wish
+        },
+        error: function(){
+            $(".spinner-border").hide();
+
         }
     });
 }
