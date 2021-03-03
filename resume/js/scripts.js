@@ -50,6 +50,7 @@ $(document).ready(function () {
         center: false,
         items:2,
         loop:false,
+        nav:true,
         margin:10,
         responsive: {
             0: {
