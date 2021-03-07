@@ -10269,21 +10269,54 @@ p {
     z-index: 9999;
     position: fixed;
     right: 10px;
-    top: 10px;
+}
+.pdf-download > a{
+    text-decoration: none;
+    color: #f4f4f4;
 }
 
-.owl-nav{
-    position: absolute;
-    top: 0;
-    font-size: 120px;
-    width: 100%;
+@media(min-width: 992px){
+    .owl-nav{
+        position: absolute;
+        top: 0;
+        font-size: 90px;
+        width: 100%;
+    }
+    .owl-next{
+        position: absolute;
+          right: -40px;
+    }
+      
+    .owl-prev{
+      left: -40px;
+      position: absolute;
+    }
+
+    .pdf-download {
+        top: 10px;
+    }
+
 }
-.owl-next{
-    position: absolute;
-      right: -40px;
-}
-  
-.owl-prev{
-  left: -40px;
-  position: absolute;
+
+@media(max-width: 992px){
+    
+    .pdf-download {
+        bottom: 10px;
+    }
+
+    .owl-nav{
+        position: absolute;
+        top: 100px;
+        font-size: 90px;
+        width: 100%;
+    }
+    .owl-next{
+        position: absolute;
+          right: -20px;
+    }
+      
+    .owl-prev{
+      left: -20px;
+      position: absolute;
+    }
 }
